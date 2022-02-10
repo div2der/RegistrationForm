@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration form</title>
+</head>
+<body>
+	<form onsubmit = "return false">
+		<label for = "usr">Username</label>
+		<input type = "text" id = "username" name = "usr"><p id = "username_error" style = "display: inline-block; color: red;"></p><br><br>
+		<label for = "pwd">Password</label>
+		<input type = "password" id = "password" name = "pwd"><p id = "password_error" style = "display: inline-block;  color: red;"></p><br><br>
+		<label for = "confirm">Confirm password</label>
+		<input type = "password" id = "confirmation" name = "confirm"><p id = "confirm_error" style = "display: inline-block; color: red;"></p><br><br>
+		<button onclick = "registrate()">Register</button>
+	</form>
+	<br>
+	<p id = "success" style = "color: green;"><p>
+	<script src="../index.js"></script>
+</body>
+</html>
